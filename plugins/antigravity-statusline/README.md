@@ -1,6 +1,6 @@
-# Custom Statusline Plugin for Antigravity CLI
+# Antigravity Statusline Plugin
 
-A lightweight, zero-dependency, compiled Rust binary that renders a beautiful terminal statusline with near-zero latency (< 2ms).
+A lightweight, zero-dependency, compiled Rust binary that renders an ultra-fast terminal statusline with near-zero latency (< 2ms) specifically for the Antigravity CLI (`agy`).
 
 ## Features
 - **Model Branding**: 24-bit Truecolor per model family (Claude orange, Gemini blue, OpenAI teal).
@@ -10,13 +10,13 @@ A lightweight, zero-dependency, compiled Rust binary that renders a beautiful te
 
 ## Structure
 ```
-custom-statusline/
+antigravity-statusline/
 ├── plugin.json
 ├── README.md
 ├── bin/
 │   └── statusline.exe
 ├── skills/
-│   └── custom-statusline/
+│   └── antigravity-statusline/
 │       └── SKILL.md
 └── src/
     ├── Cargo.toml

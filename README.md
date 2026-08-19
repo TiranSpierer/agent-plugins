@@ -1,45 +1,43 @@
-# Antigravity & Claude Code Plugins
+# AI Agent Plugins (Antigravity & Claude Code)
 
-A central repository and marketplace for Google Antigravity (`agy`) and Claude Code plugins.
+A centralized, general-purpose repository for AI agent plugins, skills, and extensions supporting **Google Antigravity (`agy`)** and **Claude Code** (with extensible layout for other agent harnesses like Codex).
 
-## 📦 Available Plugins
+## 📦 Plugins Catalog
 
-- **[`custom-statusline`](./plugins/custom-statusline)**: High-performance native Rust statusline for Antigravity CLI with model brand colors, context usage, fast git branch, and real-time quota tracking.
+| Plugin | Target Agent | Description | Directory |
+| :--- | :---: | :--- | :--- |
+| **`antigravity-statusline`** | Antigravity CLI (`agy`) | Ultra-fast native Rust statusline with model brand colors, real-time quota countdown, fast Git branch detection, and color-coded context usage. | [`plugins/antigravity-statusline`](./plugins/antigravity-statusline) |
 
-## 🚀 How to Install & Use
-
-### In Claude Code
-```bash
-# 1. Add this marketplace
-/plugin marketplace add TiranSpierer/antigravity-plugins
-
-# 2. Install any plugin from it
-/plugin install custom-statusline@tiranspierer-antigravity-plugins
-```
+## 🚀 Installation
 
 ### In Antigravity CLI
 ```bash
-# Install directly from GitHub
 agy plugin install https://github.com/TiranSpierer/antigravity-plugins
 ```
 
-## ➕ Adding a New Plugin
+### In Claude Code
+```bash
+/plugin marketplace add TiranSpierer/antigravity-plugins
+/plugin install <plugin-name>@tiranspierer-ai-plugins
+```
 
-To add a new plugin (e.g. skills, prompts, tools, or hooks):
+## ➕ Adding New Plugins
+
+To add any new plugin (skill, rules, tool, or hook):
 1. Create a folder: `plugins/<your-plugin-name>/`
-2. Add a `plugin.json` manifest:
+2. Add `plugin.json`:
    ```json
    {
      "name": "<your-plugin-name>",
-     "description": "What this plugin does"
+     "description": "Description of plugin"
    }
    ```
-3. Add your content (`skills/<skill-name>/SKILL.md`, rules, hooks, or tools).
-4. Register the plugin in `marketplace.json` and `.claude-plugin/marketplace.json`:
+3. Add your plugin contents (`skills/<name>/SKILL.md`, rules, hooks, etc.).
+4. Add an entry to `marketplace.json` and `.claude-plugin/marketplace.json`:
    ```json
    {
      "name": "<your-plugin-name>",
      "source": "./plugins/<your-plugin-name>",
-     "description": "What this plugin does"
+     "description": "Description of plugin"
    }
    ```

@@ -1,7 +1,0 @@
-{
-  "name": "custom-statusline",
-  "version": "1.0.0",
-  "description": "High-performance native Rust statusline for Antigravity CLI with model brand colors, context usage, fast git branch, and real-time quota tracking.",
-  "author": "Antigravity Pair",
-  "homepage": "https://antigravity.google"
-}
