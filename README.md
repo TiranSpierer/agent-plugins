@@ -1,4 +1,4 @@
-# AI Agent Plugins (Antigravity & Claude Code)
+﻿# AI Agent Plugins (Antigravity & Claude Code)
 
 A centralized, general-purpose repository for AI agent plugins, skills, and extensions supporting **Google Antigravity (`agy`)** and **Claude Code** (with extensible layout for other agent harnesses like Codex).
 
@@ -12,12 +12,12 @@ A centralized, general-purpose repository for AI agent plugins, skills, and exte
 
 ### In Antigravity CLI
 ```bash
-agy plugin install https://github.com/TiranSpierer/antigravity-plugins
+agy plugin install https://github.com/TiranSpierer/agent-plugins
 ```
 
 ### In Claude Code
 ```bash
-/plugin marketplace add TiranSpierer/antigravity-plugins
+/plugin marketplace add TiranSpierer/agent-plugins
 /plugin install <plugin-name>@tiranspierer-ai-plugins
 ```
 

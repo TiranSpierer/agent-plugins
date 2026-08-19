@@ -1,4 +1,4 @@
-# Antigravity Statusline Plugin
+﻿# Antigravity Statusline Plugin
 
 A lightweight, zero-dependency, compiled Rust binary that renders an ultra-fast terminal statusline with near-zero latency (< 2ms) specifically for the Antigravity CLI (`agy`).
 
