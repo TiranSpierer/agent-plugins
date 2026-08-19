@@ -4,32 +4,11 @@
     "name": "Tiran Spierer",
     "url": "https://github.com/TiranSpierer"
   },
-  "metadata": {
-    "description": "Curated collection of high-performance plugins, extensions, and skills for Google Antigravity and Claude Code",
-    "version": "1.0.0"
-  },
   "plugins": [
     {
       "name": "custom-statusline",
       "source": "./plugins/custom-statusline",
-      "description": "High-performance native Rust statusline for Antigravity & Claude Code CLI with model brand colors, context usage, fast git branch, and real-time quota tracking.",
-      "version": "1.0.0",
-      "author": {
-        "name": "Tiran Spierer",
-        "url": "https://github.com/TiranSpierer"
-      },
-      "homepage": "https://github.com/TiranSpierer/antigravity-plugins",
-      "license": "MIT",
-      "category": "productivity",
-      "tags": [
-        "statusline",
-        "rust",
-        "terminal",
-        "quota",
-        "branding",
-        "git",
-        "antigravity"
-      ]
+      "description": "High-performance native Rust statusline for Antigravity CLI with model brand colors, context usage, fast git branch, and real-time quota tracking."
     }
   ]
 }

@@ -1,21 +1,7 @@
 {
   "name": "custom-statusline",
   "version": "1.0.0",
-  "description": "High-performance native Rust statusline for Antigravity and Claude Code CLI with model brand colors, context usage, fast git branch, and real-time quota tracking.",
-  "author": {
-    "name": "Tiran Spierer",
-    "url": "https://github.com/TiranSpierer"
-  },
-  "homepage": "https://github.com/TiranSpierer/antigravity-plugins",
-  "repository": "https://github.com/TiranSpierer/antigravity-plugins",
-  "license": "MIT",
-  "keywords": [
-    "antigravity",
-    "claude-code",
-    "statusline",
-    "rust",
-    "terminal",
-    "git",
-    "quota"
-  ]
+  "description": "High-performance native Rust statusline for Antigravity CLI with model brand colors, context usage, fast git branch, and real-time quota tracking.",
+  "author": "Antigravity Pair",
+  "homepage": "https://antigravity.google"
 }

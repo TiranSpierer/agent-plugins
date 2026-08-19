@@ -5,33 +5,29 @@ description: Custom high-performance statusline written in Rust for Antigravity 
 
 # Custom Statusline Plugin
 
-This plugin provides an ultra-fast (<2ms), zero-dependency, native Rust statusline for Antigravity CLI and Claude Code.
+This plugin provides an ultra-fast, native Rust statusline for the Antigravity CLI.
 
-## Features
-- **Model TrueColor Branding**: Renders exact brand colors for Anthropic Claude (Orange), Google Gemini (Blue), OpenAI GPT/o-series (Teal), DeepSeek (Cyan), Mistral, and Meta Llama.
-- **Fast Zero-Subprocess Git Detection**: Directly inspects `.git/HEAD`, worktrees, and submodules without spawning `git.exe`.
-- **Dynamic Context Window Color Tiers**: Color-codes remaining context tokens (Blue >=75%, Green >=50%, Yellow >=25%, Red <25%).
-- **Universal API Quota Parser**: Supports both flat quota objects and bucketed provider quotas with countdown reset timers.
-- **Cross-Platform Native Binary**: Zero runtime dependencies; compiles directly to an optimized native binary on Windows, Linux, and macOS.
+## Location
+- Executable: `~/.gemini/antigravity-cli/plugins/custom-statusline/bin/statusline.exe`
+- Rust Source: `~/.gemini/antigravity-cli/plugins/custom-statusline/src/`
 
 ## Building from Source
-To compile the statusline binary from source:
+To recompile the binary after editing `src/src/main.rs`:
 
 ```bash
-cd src
+cd ~/.gemini/antigravity-cli/plugins/custom-statusline/src
 cargo build --release
+cp target/release/statusline.exe ../bin/statusline.exe
 ```
 
-The compiled binary will be placed at `target/release/statusline` (or `statusline.exe` on Windows).
-
-## Activation & Configuration
-Configure the statusline command in your `settings.json` (`~/.gemini/antigravity-cli/settings.json` or `~/.gemini/settings.json`):
+## Configuration
+In `~/.gemini/antigravity-cli/settings.json`:
 
 ```json
 {
   "statusLine": {
     "type": "command",
-    "command": "C:\\Users\\<USER>\\.gemini\\antigravity-cli\\plugins\\custom-statusline\\bin\\statusline.exe",
+    "command": "C:\\Users\\tspie\\.gemini\\antigravity-cli\\plugins\\custom-statusline\\bin\\statusline.exe",
     "enabled": true
   }
 }
