@@ -1,0 +1,23 @@
+[package]
+name = "custom-statusline"
+version = "1.0.0"
+edition = "2021"
+authors = ["Tiran Spierer <https://github.com/TiranSpierer>"]
+description = "High-performance native Rust statusline for Antigravity and Claude Code CLI"
+license = "MIT"
+repository = "https://github.com/TiranSpierer/antigravity-plugins"
+
+[[bin]]
+name = "statusline"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
