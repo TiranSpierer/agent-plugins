@@ -1,43 +1,50 @@
-﻿# AI Agent Plugins (Antigravity & Claude Code)
+# Tiran Spierer Agent Plugins
 
-A centralized, general-purpose repository for AI agent plugins, skills, and extensions supporting **Google Antigravity (`agy`)** and **Claude Code** (with extensible layout for other agent harnesses like Codex).
+Personal agent plugins distributed from one repository for Claude Code, Codex, and Google Antigravity.
 
-## 📦 Plugins Catalog
+## Plugins
 
-| Plugin | Target Agent | Description | Directory |
-| :--- | :---: | :--- | :--- |
-| **`antigravity-statusline`** | Antigravity CLI (`agy`) | Ultra-fast native Rust statusline with model brand colors, real-time quota countdown, fast Git branch detection, and color-coded context usage. | [`plugins/antigravity-statusline`](./plugins/antigravity-statusline) |
+No plugins are published on `main` yet.
 
-## 🚀 Installation
+## Install the marketplace
 
-### In Antigravity CLI
+### Claude Code
+
 ```bash
-agy plugin install https://github.com/TiranSpierer/agent-plugins
+claude plugin marketplace add https://github.com/TiranSpierer/agent-plugins.git
 ```
 
-### In Claude Code
+Install a listed plugin with:
+
 ```bash
-/plugin marketplace add TiranSpierer/agent-plugins
-/plugin install <plugin-name>@tiranspierer-ai-plugins
+claude plugin install <plugin-name>@tiranspierer-ai-plugins --scope user
 ```
 
-## ➕ Adding New Plugins
+### Codex
 
-To add any new plugin (skill, rules, tool, or hook):
-1. Create a folder: `plugins/<your-plugin-name>/`
-2. Add `plugin.json`:
-   ```json
-   {
-     "name": "<your-plugin-name>",
-     "description": "Description of plugin"
-   }
-   ```
-3. Add your plugin contents (`skills/<name>/SKILL.md`, rules, hooks, etc.).
-4. Add an entry to `marketplace.json` and `.claude-plugin/marketplace.json`:
-   ```json
-   {
-     "name": "<your-plugin-name>",
-     "source": "./plugins/<your-plugin-name>",
-     "description": "Description of plugin"
-   }
-   ```
+```bash
+codex plugin marketplace add https://github.com/TiranSpierer/agent-plugins.git
+```
+
+Install a listed plugin with:
+
+```bash
+codex plugin add <plugin-name>@tiranspierer
+```
+
+### Antigravity
+
+Antigravity installs an individual plugin directory rather than a marketplace manifest:
+
+```bash
+git clone https://github.com/TiranSpierer/agent-plugins.git
+agy plugin install ./agent-plugins/plugins/<plugin-name>
+```
+
+## Repository layout
+
+```text
+.claude-plugin/marketplace.json   Claude Code catalog
+.agents/plugins/marketplace.json Codex catalog
+plugins/                          Installable plugin directories
+```

@@ -1,14 +1,11 @@
 {
-  "name": "tiranspierer-ai-plugins",
+  "name": "tiranspierer",
   "owner": {
     "name": "Tiran Spierer",
     "url": "https://github.com/TiranSpierer"
   },
-  "plugins": [
-    {
-      "name": "antigravity-statusline",
-      "source": "./plugins/antigravity-statusline",
-      "description": "High-performance native Rust statusline for Antigravity CLI with model brand colors, context usage, fast git branch, and real-time quota tracking."
-    }
-  ]
+  "metadata": {
+    "description": "Personal agent capabilities by Tiran Spierer"
+  },
+  "plugins": []
 }

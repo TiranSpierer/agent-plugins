@@ -1,14 +1,5 @@
-# Rust build artifacts
-target/
-**/target/
-Cargo.lock
-**/*.rs.bk
-
-# OS temporary files
 .DS_Store
-Thumbs.db
-*.tmp
-
-# Environment and secrets
 .env
 *.local
+node_modules/
+target/
