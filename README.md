@@ -2,8 +2,6 @@
 
 Marketplace of CLI-backed capabilities for coding agents. Install a plugin to give your agent direct access to sources that ordinary web search cannot fully query or inspect.
 
-Plugins expose the underlying CLIs without prescribing a workflow, leaving the agent free to combine them based on the conversation.
-
 ## Setup
 
 <details>
