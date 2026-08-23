@@ -1,6 +1,6 @@
 {
-  "name": "web-sources",
-  "version": "0.1.0",
+  "name": "web-platforms",
+  "version": "0.1.1",
   "description": "Search and read web sources that general web search handles poorly",
   "author": { "name": "Tiran Spierer" }
 }

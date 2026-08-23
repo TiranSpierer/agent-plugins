@@ -9,13 +9,13 @@
   },
   "plugins": [
     {
-      "name": "israel-market",
-      "source": "./plugins/israel-market",
+      "name": "israel-shopping",
+      "source": "./plugins/israel-shopping",
       "description": "Search and inspect KSP Israel products"
     },
     {
-      "name": "web-sources",
-      "source": "./plugins/web-sources",
+      "name": "web-platforms",
+      "source": "./plugins/web-platforms",
       "description": "Search and read Reddit posts, communities, and discussions"
     }
   ]

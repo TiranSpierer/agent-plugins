@@ -36,51 +36,51 @@ Antigravity installs each plugin directly from its GitHub directory. Use the com
 ## Plugins
 
 <details>
-<summary><strong>israel-market</strong> — KSP product search and details</summary>
+<summary><strong>israel-shopping</strong> — KSP product search and details</summary>
 
 Search KSP's live catalog and filters, then inspect product pricing, availability, variations, specifications, and images. Read-only and requires no authentication.
 
 **Claude Code**
 
 ```bash
-claude plugin install israel-market@tiranspierer --scope user
+claude plugin install israel-shopping@tiranspierer --scope user
 ```
 
 **Codex**
 
 ```bash
-codex plugin add israel-market@tiranspierer
+codex plugin add israel-shopping@tiranspierer
 ```
 
 **Antigravity**
 
 ```bash
-agy plugin install https://github.com/TiranSpierer/agent-plugins/tree/main/plugins/israel-market
+agy plugin install https://github.com/TiranSpierer/agent-plugins/tree/main/plugins/israel-shopping
 ```
 
 </details>
 
 <details>
-<summary><strong>web-sources</strong> — Reddit search and full discussions</summary>
+<summary><strong>web-platforms</strong> — Reddit search and full discussions</summary>
 
 Search Reddit and individual subreddits, discover communities, browse feeds, and read complete posts with nested comment discussions. Read-only and works without authentication.
 
 **Claude Code**
 
 ```bash
-claude plugin install web-sources@tiranspierer --scope user
+claude plugin install web-platforms@tiranspierer --scope user
 ```
 
 **Codex**
 
 ```bash
-codex plugin add web-sources@tiranspierer
+codex plugin add web-platforms@tiranspierer
 ```
 
 **Antigravity**
 
 ```bash
-agy plugin install https://github.com/TiranSpierer/agent-plugins/tree/main/plugins/web-sources
+agy plugin install https://github.com/TiranSpierer/agent-plugins/tree/main/plugins/web-platforms
 ```
 
 </details>

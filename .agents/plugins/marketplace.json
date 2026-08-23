@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "israel-market",
+      "name": "israel-shopping",
       "source": {
         "source": "local",
-        "path": "./plugins/israel-market"
+        "path": "./plugins/israel-shopping"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -17,10 +17,10 @@
       "category": "Shopping"
     },
     {
-      "name": "web-sources",
+      "name": "web-platforms",
       "source": {
         "source": "local",
-        "path": "./plugins/web-sources"
+        "path": "./plugins/web-platforms"
       },
       "policy": {
         "installation": "AVAILABLE",
