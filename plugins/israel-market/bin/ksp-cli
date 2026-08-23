@@ -1,0 +1,2 @@
+#!/bin/sh
+exec npx --prefer-offline -y -p "git+https://github.com/TiranSpierer/ksp-mcp.git" ksp-cli "$@"

@@ -1,0 +1,2 @@
+#!/bin/sh
+exec npx --prefer-offline -y -p "git+https://github.com/TiranSpierer/reddit-mcp.git" reddit-cli "$@"

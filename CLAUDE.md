@@ -55,10 +55,10 @@ plugins/<name>/
 
 ## Antigravity quirks
 
-- Antigravity does not consume the Claude or Codex marketplace catalogs. It installs an individual plugin directory with `agy plugin install <path>`.
+- Antigravity does not consume the Claude or Codex marketplace catalogs. It installs an individual local or GitHub plugin directory with `agy plugin install <target>`.
 - Every plugin needs a root `plugin.json` using the Antigravity schema. Only `$schema`, `name`, and `description` are supported; additional metadata belongs in the other manifests.
 - Antigravity discovers the same `skills/` directory and stages plugin files under its global plugin directory.
-- The reliable GitHub installation flow is to clone this repository and pass `plugins/<name>` to `agy plugin install`.
+- GitHub subpaths are supported, so install with `agy plugin install https://github.com/TiranSpierer/agent-plugins/tree/main/plugins/<name>`.
 
 ## Adding a plugin
 

@@ -7,5 +7,16 @@
   "metadata": {
     "description": "Personal agent capabilities by Tiran Spierer"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "israel-market",
+      "source": "./plugins/israel-market",
+      "description": "Search and inspect KSP Israel products"
+    },
+    {
+      "name": "web-sources",
+      "source": "./plugins/web-sources",
+      "description": "Search and read Reddit posts, communities, and discussions"
+    }
+  ]
 }

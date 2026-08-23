@@ -1,0 +1,19 @@
+{
+  "name": "web-sources",
+  "version": "0.1.0",
+  "description": "Search and read web sources that general web search handles poorly",
+  "author": {
+    "name": "Tiran Spierer",
+    "url": "https://github.com/TiranSpierer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Web Sources",
+    "shortDescription": "Full Reddit search and discussions",
+    "longDescription": "CLI access to Reddit search, communities, feeds, posts, and nested comment discussions.",
+    "developerName": "Tiran Spierer",
+    "category": "Research",
+    "capabilities": ["Search", "Read"],
+    "defaultPrompt": ["Search Reddit for discussions about this topic."]
+  }
+}

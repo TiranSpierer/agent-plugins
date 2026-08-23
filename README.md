@@ -4,7 +4,10 @@ Personal agent plugins distributed from one repository for Claude Code, Codex, a
 
 ## Plugins
 
-No plugins are published on `main` yet.
+| Plugin | Current capabilities |
+|---|---|
+| [`israel-market`](plugins/israel-market) | Search KSP products and filters; read product prices, availability, variations, specifications, and images. |
+| [`web-sources`](plugins/web-sources) | Search Reddit and subreddits; browse feeds; read full posts and nested comment discussions. |
 
 ## Install the marketplace
 
@@ -34,11 +37,10 @@ codex plugin add <plugin-name>@tiranspierer
 
 ### Antigravity
 
-Antigravity installs an individual plugin directory rather than a marketplace manifest:
+Antigravity installs an individual plugin directory:
 
 ```bash
-git clone https://github.com/TiranSpierer/agent-plugins.git
-agy plugin install ./agent-plugins/plugins/<plugin-name>
+agy plugin install https://github.com/TiranSpierer/agent-plugins/tree/main/plugins/<plugin-name>
 ```
 
 ## Repository layout

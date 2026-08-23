@@ -3,5 +3,30 @@
   "interface": {
     "displayName": "Tiran Spierer Plugins"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "israel-market",
+      "source": {
+        "source": "local",
+        "path": "./plugins/israel-market"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Shopping"
+    },
+    {
+      "name": "web-sources",
+      "source": {
+        "source": "local",
+        "path": "./plugins/web-sources"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    }
+  ]
 }
