@@ -1,10 +1,18 @@
 #!/usr/bin/env node
 const { spawnSync } = require("node:child_process");
 
-const executable = process.platform === "win32" ? "npx.cmd" : "npx";
+// On Windows, .cmd files cannot be spawned directly — they require cmd.exe.
+// Use ["cmd", "/c", "npx.cmd", ...args] instead of shell:true to avoid
+// shell escaping issues with user-supplied arguments.
+const [executable, npxArgs] =
+  process.platform === "win32"
+    ? ["cmd", ["/c", "npx.cmd"]]
+    : ["npx", []];
+
 const result = spawnSync(
   executable,
   [
+    ...npxArgs,
     "--prefer-online",
     "-y",
     "-p",
@@ -14,7 +22,6 @@ const result = spawnSync(
   ],
   {
     stdio: ["pipe", "inherit", "inherit"],
-    shell: process.platform === "win32",
     env: {
       ...process.env,
       npm_config_loglevel: "silent",

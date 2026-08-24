@@ -40,10 +40,12 @@ try {
     )}\n`,
   );
 
-  const npm = process.platform === "win32" ? "npm.cmd" : "npm";
-  const result = spawnSync(npm, ["install", "-g", "--install-links", temporary], {
+  const [npm, npmArgs] =
+    process.platform === "win32"
+      ? ["cmd", ["/c", "npm.cmd"]]
+      : ["npm", []];
+  const result = spawnSync(npm, [...npmArgs, "install", "-g", "--install-links", temporary], {
     stdio: ["pipe", "inherit", "inherit"],
-    shell: process.platform === "win32",
   });
   if (result.error) {
     console.error(result.error.message);
