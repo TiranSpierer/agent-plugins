@@ -1,10 +1,11 @@
 {
   "name": "agent-launcher-installer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Installer for lazy agent CLI launchers",
   "files": [
     "installer",
+    "plugins/israel-shopping/bin",
     "plugins/web-platforms/bin"
   ],
   "bin": {
