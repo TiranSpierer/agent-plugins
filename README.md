@@ -29,7 +29,7 @@ codex plugin marketplace add https://github.com/TiranSpierer/agent-plugins.git
 <details>
 <summary>Antigravity</summary>
 
-Antigravity installs each plugin directly from its GitHub directory. Use the command shown under the plugin you want below.
+Antigravity doesn't have a marketplace. Use the command shown under the plugin you want below.
 
 </details>
 
