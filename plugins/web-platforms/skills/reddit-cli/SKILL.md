@@ -8,4 +8,4 @@ This plugin provides the `reddit-cli` command. Invoke it directly.
 - Run `reddit-cli --help` to discover commands.
 - Run `reddit-cli <command> --help` to discover a command's current arguments and options.
 
-For troubleshooting, see [the marketplace guide](https://github.com/TiranSpierer/agent-plugins/blob/main/TROUBLESHOOTING.md#reddit-cli).
+If `reddit-cli` is unavailable, follow [the marketplace guide](https://github.com/TiranSpierer/agent-plugins/blob/main/TROUBLESHOOTING.md#reddit-cli). Do not invoke it from the plugin cache.

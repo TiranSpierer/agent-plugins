@@ -8,4 +8,4 @@ This plugin provides the `youtube-cli` command. Invoke it directly.
 - Run `youtube-cli --help` to discover resources.
 - Run `youtube-cli <resource> --help` and `youtube-cli <resource> <command> --help` to discover commands and options.
 
-For troubleshooting, see [the marketplace guide](https://github.com/TiranSpierer/agent-plugins/blob/main/TROUBLESHOOTING.md#youtube-cli).
+If `youtube-cli` is unavailable, follow [the marketplace guide](https://github.com/TiranSpierer/agent-plugins/blob/main/TROUBLESHOOTING.md#youtube-cli). Do not invoke it from the plugin cache.
