@@ -1,2 +1,22 @@
-#!/bin/sh
-exec uvx --from "git+https://github.com/TiranSpierer/youtube-cli.git" youtube-cli "$@"
+#!/usr/bin/env node
+const { spawnSync } = require("node:child_process");
+
+const executable = process.platform === "win32" ? "uvx.exe" : "uvx";
+const result = spawnSync(
+  executable,
+  [
+    "--quiet",
+    "--refresh",
+    "--from",
+    "git+https://github.com/TiranSpierer/youtube-cli.git@main",
+    "youtube-cli",
+    ...process.argv.slice(2),
+  ],
+  { stdio: "inherit" },
+);
+
+if (result.error) {
+  console.error(result.error.message);
+  process.exit(1);
+}
+process.exit(result.status ?? 1);

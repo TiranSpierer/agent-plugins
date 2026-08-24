@@ -1,2 +1,29 @@
-#!/bin/sh
-exec npx --prefer-offline -y -p "git+https://github.com/TiranSpierer/reddit-mcp.git" reddit-cli "$@"
+#!/usr/bin/env node
+const { spawnSync } = require("node:child_process");
+
+const executable = process.platform === "win32" ? "npx.cmd" : "npx";
+const result = spawnSync(
+  executable,
+  [
+    "--prefer-online",
+    "-y",
+    "-p",
+    "git+https://github.com/TiranSpierer/reddit-mcp.git#main",
+    "reddit-cli",
+    ...process.argv.slice(2),
+  ],
+  {
+    stdio: "inherit",
+    env: {
+      ...process.env,
+      npm_config_loglevel: "silent",
+      npm_config_update_notifier: "false",
+    },
+  },
+);
+
+if (result.error) {
+  console.error(result.error.message);
+  process.exit(1);
+}
+process.exit(result.status ?? 1);

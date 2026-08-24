@@ -1,0 +1,16 @@
+{
+  "name": "agent-launcher-installer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Installer for lazy agent CLI launchers",
+  "files": [
+    "installer",
+    "plugins/web-platforms/bin"
+  ],
+  "bin": {
+    "install-agent-launcher": "installer/install-launcher.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
