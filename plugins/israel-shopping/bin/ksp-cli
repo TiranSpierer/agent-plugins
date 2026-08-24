@@ -13,7 +13,7 @@ const result = spawnSync(
     ...process.argv.slice(2),
   ],
   {
-    stdio: "inherit",
+    stdio: ["pipe", "inherit", "inherit"],
     env: {
       ...process.env,
       npm_config_loglevel: "silent",

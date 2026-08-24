@@ -42,7 +42,7 @@ try {
 
   const npm = process.platform === "win32" ? "npm.cmd" : "npm";
   const result = spawnSync(npm, ["install", "-g", "--install-links", temporary], {
-    stdio: "inherit",
+    stdio: ["pipe", "inherit", "inherit"],
   });
   if (result.error) {
     console.error(result.error.message);
