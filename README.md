@@ -24,6 +24,8 @@ Add the marketplace once:
 codex plugin marketplace add https://github.com/TiranSpierer/agent-plugins.git
 ```
 
+Codex loads the plugin skills but does not add the bundled `bin/` launchers to `PATH`. Install each plugin's CLIs separately using the commands shown below.
+
 </details>
 
 <details>
@@ -49,6 +51,7 @@ claude plugin install israel-shopping@tiranspierer --scope user
 **Codex**
 
 ```bash
+npm install -g git+https://github.com/TiranSpierer/ksp-mcp.git
 codex plugin add israel-shopping@tiranspierer
 ```
 
@@ -74,6 +77,8 @@ claude plugin install web-platforms@tiranspierer --scope user
 **Codex**
 
 ```bash
+npm install -g git+https://github.com/TiranSpierer/reddit-mcp.git
+uv tool install git+https://github.com/TiranSpierer/youtube-cli.git
 codex plugin add web-platforms@tiranspierer
 ```
 
