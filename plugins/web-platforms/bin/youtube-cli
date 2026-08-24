@@ -1,0 +1,2 @@
+#!/bin/sh
+exec uvx --from "git+https://github.com/TiranSpierer/youtube-cli.git" youtube-cli "$@"

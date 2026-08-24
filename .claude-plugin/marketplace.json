@@ -16,7 +16,7 @@
     {
       "name": "web-platforms",
       "source": "./plugins/web-platforms",
-      "description": "Search and read Reddit posts, communities, and discussions"
+      "description": "Search and read Reddit and YouTube"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "web-platforms",
-  "description": "Search and read web sources that general web search handles poorly"
+  "description": "Search and read Reddit and YouTube"
 }

@@ -1,7 +1,7 @@
 {
   "name": "web-platforms",
-  "version": "0.1.1",
-  "description": "Search and read web sources that general web search handles poorly",
+  "version": "0.2.0",
+  "description": "Search and read Reddit and YouTube",
   "author": {
     "name": "Tiran Spierer",
     "url": "https://github.com/TiranSpierer"
@@ -9,11 +9,11 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Web Platforms",
-    "shortDescription": "Full Reddit search and discussions",
-    "longDescription": "CLI access to Reddit search, communities, feeds, posts, and nested comment discussions.",
+    "shortDescription": "Reddit and YouTube access",
+    "longDescription": "CLI access to Reddit discussions and YouTube search, metadata, transcripts, channels, playlists, and comments.",
     "developerName": "Tiran Spierer",
     "category": "Research",
     "capabilities": ["Search", "Read"],
-    "defaultPrompt": ["Search Reddit for discussions about this topic."]
+    "defaultPrompt": ["Find relevant discussions and videos about this topic."]
   }
 }
