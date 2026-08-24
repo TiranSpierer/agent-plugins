@@ -10,6 +10,13 @@ Marketplace repository for Claude Code, Codex, and Antigravity plugins.
 - Codex plugin: `plugins/<name>/.codex-plugin/plugin.json`
 - Antigravity plugin: `plugins/<name>/plugin.json`
 
+## CLI launchers
+
+- Plugin launchers live in `plugins/<name>/bin/`.
+- `installer/install-launcher.js` installs one requested launcher.
+- Root `package.json` defines the transient installer package and files it ships.
+- `TROUBLESHOOTING.md` contains the canonical launcher-install commands.
+
 ## Changes
 
 When adding or renaming a plugin:
@@ -20,11 +27,15 @@ When adding or renaming a plugin:
 
 When changing a plugin, update its version in the Claude Code and Codex manifests.
 
+When adding a CLI launcher, add it to the installer allowlist, root package files, troubleshooting guide, and its skill's command-not-found instructions.
+
 ## Validation
 
 ```bash
 claude plugin validate .
 agy plugin validate plugins/<name>
+node --check installer/install-launcher.js
+npm pack --dry-run
 ```
 
 Validate edited JSON files and run changed executables before committing.

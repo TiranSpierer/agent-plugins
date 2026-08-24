@@ -33,6 +33,13 @@ Antigravity installs each plugin directly from its GitHub directory. Use the com
 
 </details>
 
+<details>
+<summary>Troubleshooting</summary>
+
+If a plugin command is unavailable, see [CLI troubleshooting](TROUBLESHOOTING.md).
+
+</details>
+
 ## Plugins
 
 <details>
