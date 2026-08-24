@@ -1,9 +1,9 @@
 {
   "name": "israel-shopping",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Search and inspect products sold by Israeli retailers",
   "author": {
-    "name": "Tiran Spierer",
+    "name": "Tirsi",
     "url": "https://github.com/TiranSpierer"
   },
   "skills": "./skills/",
@@ -11,7 +11,7 @@
     "displayName": "Israel Shopping",
     "shortDescription": "Israeli retailer product data",
     "longDescription": "CLI access to search KSP products, filters, details, prices, availability, specifications, and images.",
-    "developerName": "Tiran Spierer",
+    "developerName": "Tirsi",
     "category": "Shopping",
     "capabilities": ["Search", "Read"],
     "defaultPrompt": ["Search KSP for a product I describe."]

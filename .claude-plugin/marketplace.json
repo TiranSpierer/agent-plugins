@@ -1,11 +1,11 @@
 {
-  "name": "tiranspierer",
+  "name": "tirsi",
   "owner": {
-    "name": "Tiran Spierer",
+    "name": "Tirsi",
     "url": "https://github.com/TiranSpierer"
   },
   "metadata": {
-    "description": "Personal agent capabilities by Tiran Spierer"
+    "description": "Agent plugins for Claude Code, Codex, and Antigravity"
   },
   "plugins": [
     {

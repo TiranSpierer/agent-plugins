@@ -50,13 +50,13 @@ Search KSP's live catalog and filters, then inspect product pricing, availabilit
 **Claude Code**
 
 ```bash
-claude plugin install israel-shopping@tiranspierer --scope user
+claude plugin install israel-shopping@tirsi --scope user
 ```
 
 **Codex**
 
 ```bash
-codex plugin add israel-shopping@tiranspierer
+codex plugin add israel-shopping@tirsi
 ```
 
 **Antigravity**
@@ -75,13 +75,13 @@ Search Reddit and individual subreddits, browse feeds, and read complete discuss
 **Claude Code**
 
 ```bash
-claude plugin install web-platforms@tiranspierer --scope user
+claude plugin install web-platforms@tirsi --scope user
 ```
 
 **Codex**
 
 ```bash
-codex plugin add web-platforms@tiranspierer
+codex plugin add web-platforms@tirsi
 ```
 
 **Antigravity**
