@@ -11,5 +11,5 @@ This plugin provides the `reddit-cli` command. Invoke it directly.
 If `reddit-cli` returns `command not found`, run:
 
 ```bash
-gh api repos/TiranSpierer/agent-plugins/contents/TROUBLESHOOTING.md -H 'Accept: application/vnd.github.raw+json'
+gh api repos/TiranSpierer/agent-plugins/contents/TROUBLESHOOTING.md --jq .content | base64 -d
 ```
