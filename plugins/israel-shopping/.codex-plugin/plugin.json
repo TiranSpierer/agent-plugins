@@ -1,6 +1,6 @@
 {
   "name": "israel-shopping",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Search and inspect products sold by Israeli retailers",
   "author": {
     "name": "Tirsi",
@@ -9,11 +9,11 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Israel Shopping",
-    "shortDescription": "Israeli retailer product data",
-    "longDescription": "CLI access to search KSP products, filters, details, prices, availability, specifications, and images.",
+    "shortDescription": "KSP and Zap shopping data",
+    "longDescription": "CLI access to KSP products and Zap cross-store price comparisons, offers, specifications, reviews, price history, categories, filters, and store information.",
     "developerName": "Tirsi",
     "category": "Shopping",
     "capabilities": ["Search", "Read"],
-    "defaultPrompt": ["Search KSP for a product I describe."]
+    "defaultPrompt": ["Find and compare an Israeli product I describe."]
   }
 }

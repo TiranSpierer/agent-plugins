@@ -1,5 +1,5 @@
 {
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "israel-shopping",
-  "description": "Search and inspect products sold by Israeli retailers"
+  "description": "Search KSP and compare products and stores on Zap Israel"
 }

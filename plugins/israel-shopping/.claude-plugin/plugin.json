@@ -1,6 +1,6 @@
 {
   "name": "israel-shopping",
-  "version": "0.1.3",
-  "description": "Search and inspect products sold by Israeli retailers",
+  "version": "0.2.0",
+  "description": "Search KSP and compare products and stores on Zap Israel",
   "author": { "name": "Tirsi" }
 }

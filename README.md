@@ -43,9 +43,9 @@ If a plugin command is unavailable, see [CLI troubleshooting](TROUBLESHOOTING.md
 ## Plugins
 
 <details>
-<summary><strong>israel-shopping</strong> — KSP product search and details</summary>
+<summary><strong>israel-shopping</strong> — KSP and Zap product research</summary>
 
-Search KSP's live catalog and filters, then inspect product pricing, availability, variations, specifications, and images. Read-only and requires no authentication.
+Search KSP's live catalog and inspect product pricing, availability, variations, specifications, and images. Search Zap's cross-store catalog, compare regular and Eilat offers, inspect delivered prices, specifications, reviews, price history, categories, filters, similar products, and stores. Read-only and requires no authentication.
 
 **Claude Code**
 

@@ -6,6 +6,7 @@ const { spawnSync } = require("node:child_process");
 
 const launchers = {
   "ksp-cli": "plugins/israel-shopping/bin/ksp-cli",
+  "zap-cli": "plugins/israel-shopping/bin/zap-cli",
   "reddit-cli": "plugins/web-platforms/bin/reddit-cli",
   "youtube-cli": "plugins/web-platforms/bin/youtube-cli",
 };

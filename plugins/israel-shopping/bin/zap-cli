@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+const { spawnSync } = require("node:child_process");
+
+// On Windows, .cmd files must be launched through cmd.exe. Avoid shell:true so
+// user-supplied CLI arguments are forwarded without shell interpolation.
+const [executable, npxArgs] =
+  process.platform === "win32"
+    ? ["cmd", ["/c", "npx.cmd"]]
+    : ["npx", []];
+
+const result = spawnSync(
+  executable,
+  [
+    ...npxArgs,
+    "--prefer-online",
+    "-y",
+    "-p",
+    "git+https://github.com/TiranSpierer/zap-cli.git#main",
+    "zap-cli",
+    ...process.argv.slice(2),
+  ],
+  {
+    stdio: ["pipe", "inherit", "inherit"],
+    env: {
+      ...process.env,
+      npm_config_loglevel: "silent",
+      npm_config_update_notifier: "false",
+    },
+  },
+);
+
+if (result.error) {
+  console.error(result.error.message);
+  process.exit(1);
+}
+process.exit(result.status ?? 1);
