@@ -33,13 +33,6 @@ Antigravity doesn't have a marketplace. Use the command shown under the plugin y
 
 </details>
 
-<details>
-<summary>Troubleshooting</summary>
-
-If a plugin command is unavailable, see [CLI troubleshooting](TROUBLESHOOTING.md).
-
-</details>
-
 ## Plugins
 
 <details>
@@ -91,3 +84,7 @@ agy plugin install https://github.com/TiranSpierer/agent-plugins/tree/main/plugi
 ```
 
 </details>
+
+## Troubleshooting
+
+If a plugin command is unavailable, see [CLI troubleshooting](TROUBLESHOOTING.md).
