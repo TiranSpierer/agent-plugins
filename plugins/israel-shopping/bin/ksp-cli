@@ -16,7 +16,7 @@ const result = spawnSync(
     "--prefer-online",
     "-y",
     "-p",
-    "git+https://github.com/TiranSpierer/ksp-mcp.git#main",
+    "git+https://github.com/TiranSpierer/ksp-cli.git#main",
     "ksp-cli",
     ...process.argv.slice(2),
   ],
