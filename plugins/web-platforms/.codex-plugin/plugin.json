@@ -1,6 +1,6 @@
 {
   "name": "web-platforms",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "description": "Search and read Reddit and YouTube",
   "author": {
     "name": "Tirsi",
@@ -10,7 +10,7 @@
   "interface": {
     "displayName": "Web Platforms",
     "shortDescription": "Reddit and YouTube access",
-    "longDescription": "CLI access to Reddit discussions and YouTube search, metadata, transcripts, channels, playlists, and comments.",
+    "longDescription": "CLI access to Reddit searches, communities, saved discussion threads, and YouTube search, metadata, transcripts, channels, playlists, and comments.",
     "developerName": "Tirsi",
     "category": "Research",
     "capabilities": ["Search", "Read"],

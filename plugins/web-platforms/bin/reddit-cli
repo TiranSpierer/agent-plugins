@@ -16,7 +16,7 @@ const result = spawnSync(
     "--prefer-online",
     "-y",
     "-p",
-    "git+https://github.com/TiranSpierer/reddit-mcp.git#main",
+    "git+https://github.com/TiranSpierer/reddit-cli.git#main",
     "reddit-cli",
     ...process.argv.slice(2),
   ],

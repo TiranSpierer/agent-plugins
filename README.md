@@ -63,7 +63,7 @@ agy plugin install https://github.com/TiranSpierer/agent-plugins/tree/main/plugi
 <details>
 <summary><strong>web-platforms</strong> — Reddit and YouTube</summary>
 
-Search Reddit and individual subreddits, browse feeds, and read complete discussions. Search YouTube, inspect video and channel metadata, browse channel and playlist videos, and save transcripts or comments for local analysis. Read-only and works without authentication.
+Search Reddit and individual subreddits, browse feeds, and save complete discussion threads for local analysis. Search YouTube, inspect video and channel metadata, browse channel and playlist videos, and save transcripts or comments. Read-only and works without authentication.
 
 **Claude Code**
 
