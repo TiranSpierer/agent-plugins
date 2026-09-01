@@ -5,9 +5,7 @@ description: CLI access to Reddit search, subreddit discovery and feeds, and com
 
 This plugin provides the `reddit-cli` command. Invoke it directly.
 
-- Run `reddit-cli --help` to discover resources.
-- Run `reddit-cli <command> --help` and `reddit-cli <command> <subcommand> --help` to discover current arguments, options, and generated files.
-- Thread bodies and comments, plus subreddit sidebars and rules, are saved under the OS temporary directory; use the returned paths for detailed analysis.
+- Run `reddit-cli --help` and `reddit-cli <command> --help` to discover commands, arguments, and options.
 
 If `reddit-cli` returns `command not found`, run:
 
