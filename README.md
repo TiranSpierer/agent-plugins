@@ -36,9 +36,9 @@ Antigravity doesn't have a marketplace. Use the command shown under the plugin y
 ## Plugins
 
 <details>
-<summary><strong>israel-shopping</strong> — KSP and Zap product research</summary>
+<summary><strong>israel-shopping</strong> — Israeli product and price research</summary>
 
-Search KSP's live catalog and inspect product pricing, availability, variations, specifications, recommendations, and images. Search Zap's cross-store catalog, compare regular and Eilat offers, inspect delivered prices, specifications, reviews, price history, categories, filters, similar products, and stores. Read-only and requires no authentication.
+Search KSP's live catalog and inspect product pricing, availability, variations, specifications, recommendations, and images. Search Zap's cross-store catalog, compare regular and Eilat offers, and inspect delivered prices, reviews, and price history. Search current baby products from Shilav, Baby Star, Motsesim, Agalease, and My Baby, including prices, sales, availability, variants, barcodes, descriptions, and collections. Read-only and requires no authentication.
 
 **Claude Code**
 

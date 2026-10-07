@@ -28,6 +28,7 @@ When adding or renaming a plugin:
 When changing a plugin, update its version in the Claude Code and Codex manifests.
 
 When adding a CLI launcher, add it to the installer allowlist, root package files, troubleshooting guide, and its skill's command-not-found instructions.
+Keep all related shopping CLIs in `israel-shopping`; a new data source does not require a separate plugin when it serves the same user intent.
 
 ## Validation
 

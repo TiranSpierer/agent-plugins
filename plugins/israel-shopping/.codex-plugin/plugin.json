@@ -1,6 +1,6 @@
 {
   "name": "israel-shopping",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Search and inspect products sold by Israeli retailers",
   "author": {
     "name": "Tirsi",
@@ -9,8 +9,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Israel Shopping",
-    "shortDescription": "KSP and Zap shopping data",
-    "longDescription": "CLI access to KSP products, specifications, offers, recommendations, and images, plus Zap cross-store price comparisons, reviews, price history, categories, filters, and stores.",
+    "shortDescription": "KSP, Zap, and baby-store shopping data",
+    "longDescription": "CLI access to KSP products, Zap price comparisons, and current baby products from Shilav, Baby Star, Motsesim, Agalease, and My Baby.",
     "developerName": "Tirsi",
     "category": "Shopping",
     "capabilities": ["Search", "Read"],

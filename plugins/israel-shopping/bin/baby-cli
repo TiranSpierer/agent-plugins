@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+const { spawnSync } = require("node:child_process");
+const { existsSync } = require("node:fs");
+const { dirname, join } = require("node:path");
+
+let executable = "npx";
+let npxArgs = [];
+if (process.platform === "win32") {
+  const bundledNpx = join(dirname(process.execPath), "node_modules", "npm", "bin", "npx-cli.js");
+  const npmSibling = process.env.npm_execpath
+    ? join(dirname(process.env.npm_execpath), "npx-cli.js")
+    : undefined;
+  const npxCli = [bundledNpx, npmSibling].find((candidate) => candidate && existsSync(candidate));
+  if (!npxCli) {
+    console.error("Could not locate npx-cli.js in the Node.js installation.");
+    process.exit(1);
+  }
+  executable = process.execPath;
+  npxArgs = [npxCli];
+}
+
+const result = spawnSync(
+  executable,
+  [
+    ...npxArgs,
+    "--prefer-online",
+    "-y",
+    "-p",
+    "git+https://github.com/TiranSpierer/baby-cli.git#main",
+    "baby-cli",
+    ...process.argv.slice(2),
+  ],
+  {
+    stdio: ["pipe", "inherit", "inherit"],
+    env: {
+      ...process.env,
+      npm_config_loglevel: "silent",
+      npm_config_update_notifier: "false",
+    },
+  },
+);
+
+if (result.error) {
+  console.error(result.error.message);
+  process.exit(1);
+}
+process.exit(result.status ?? 1);

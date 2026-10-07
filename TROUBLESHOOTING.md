@@ -1,5 +1,13 @@
 # CLI troubleshooting
 
+## baby-cli
+
+If `baby-cli` is unavailable:
+
+```bash
+npx --prefer-online -y -p "git+https://github.com/TiranSpierer/agent-plugins.git#main" install-agent-launcher baby-cli
+```
+
 ## reddit-cli
 
 If `reddit-cli` is unavailable:
