@@ -11,7 +11,7 @@
     {
       "name": "israel-shopping",
       "source": "./plugins/israel-shopping",
-      "description": "Search and inspect KSP Israel products"
+      "description": "Search KSP and Israeli baby stores and compare products on Zap"
     },
     {
       "name": "web-platforms",

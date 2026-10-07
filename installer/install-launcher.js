@@ -5,6 +5,7 @@ const { basename, join, resolve } = require("node:path");
 const { spawnSync } = require("node:child_process");
 
 const launchers = {
+  "baby-cli": "plugins/israel-shopping/bin/baby-cli",
   "ksp-cli": "plugins/israel-shopping/bin/ksp-cli",
   "zap-cli": "plugins/israel-shopping/bin/zap-cli",
   "reddit-cli": "plugins/web-platforms/bin/reddit-cli",
